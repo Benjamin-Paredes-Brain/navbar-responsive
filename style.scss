@@ -1,0 +1,307 @@
+$color-primary: #8b5cf1;
+$color-secondary: #3D3A50;
+$bg-color: #1A1C22;
+$color-text: #F7F7F7;
+
+body {
+    background-color: $bg-color;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// (COPIAR A DE ACA PARA ABAJO) ------------------------------------------------------
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 150%;
+}
+
+// NAVBAR
+
+.contenedor-principal {
+    position: relative;
+    background-color: $color-primary;
+    padding: 15px;
+}
+
+.fa-solid {
+    color: $color-text;
+    padding: 5px;
+}
+
+.navbar-links {
+    color: $color-text;
+}
+
+
+// VISTA MOBILE
+
+@media (max-width: 768px) {
+
+    // NAVBAR - MOBILE
+
+    .header-right-mobile {
+        display: flex;
+        align-items: center;
+
+        .carrito-mobile {
+            border: none;
+            color: $color-text;
+            font-size: 25px;
+            background-color: transparent;
+            cursor: pointer;
+
+            .contador-mobile {
+                position: absolute;
+                right: 7px;
+                top: 72px;
+                color: $color-primary;
+                font-size: 12px;
+                padding: 2px 5px;
+                border-radius: 50%;
+            }
+
+            .lupita-mobile {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .contenedor-principal {
+        display: flex;
+        justify-content: space-between;
+        background-color: $bg-color;
+
+        .barrab-mobile.mostrar {
+            display: block;
+            background-color: $color-primary;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            padding: 2%;
+        }
+
+        .barrab-mobile {
+            border: none;
+            display: none;
+        }
+    }
+
+    .navbar-container.mostrar {
+        left: 0;
+    }
+
+    .navbar-container {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        transition: right 0.5s ease-in-out;
+        background-color: $bg-color;
+        width: 85%;
+        height: 100vh;
+
+
+        .navbar-drop {
+            display: flex;
+            flex-direction: column;
+
+            .navbar-cerrar {
+                position: relative;
+                left: 90%;
+            }
+
+            .navbar-items {
+                align-items: center;
+                padding: 20px;
+                border-top: 1px solid $color-secondary;
+            }
+
+            .flechita-drop {
+                position: relative;
+                left: 60%;
+            }
+
+            .navbar-dropdown.mostrar {
+                display: block;
+            }
+
+            .navbar-dropdown {
+                display: none;
+            }
+
+            .item-dropdown {
+                padding: 20px;
+            }
+
+        }
+
+
+        .login-div-mobile {
+
+            position: relative;
+            display: flex;
+            top: 60%;
+            padding: 20px;
+            border-top: 1px solid $color-secondary;
+            border-bottom: 1px solid $color-secondary;
+
+            .separador-mobile {
+                color: $color-text;
+            }
+
+
+            .login-mobile {
+                color: $color-text;
+                text-decoration: none;
+                font-size: small;
+                padding: 5px;
+
+
+            }
+
+        }
+
+
+
+    }
+
+    .nav-up {
+        display: none;
+    }
+
+}
+
+
+// VISTA DESKTOP
+
+
+@media (min-width: 769px) {
+
+    // NAVBAR - DESKTOP
+
+    .navbar-boton {
+        display: none;
+    }
+
+    .navbar-dropdown {
+        display: none;
+    }
+
+    .fa-caret-down {
+        display: none;
+    }
+
+    .ocultar-boton {
+        display: none;
+    }
+
+
+    .navbar-drop {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .barrab-mobile {
+        display: none;
+    }
+
+    .lupita-mobile {
+        display: none;
+    }
+
+    .login-mobile {
+        display: none;
+    }
+
+    .separador-mobile {
+        display: none;
+    }
+
+    .carrito-mobile {
+        display: none;
+    }
+
+    .contador-mobile {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+
+    .header-right-mobile {
+        display: none;
+    }
+
+    .nav-up {
+        background-color: $bg-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+
+        .barra-busqueda {
+            border-bottom: 1px solid white;
+
+            .barrab-desktop {
+                background-color: $bg-color;
+                border: none;
+            }
+        }
+
+
+        .header-right {
+            display: flex;
+            align-items: center;
+
+            .login {
+                color: $color-text;
+                text-decoration: none;
+                font-size: small;
+            }
+
+            .separador {
+                color: $color-text;
+            }
+
+            .carrito-desktop {
+                border: none;
+                color: $color-text;
+                font-size: 35px;
+                background-color: $bg-color;
+                cursor: pointer;
+
+                .contador-desktop {
+                    position: absolute;
+                    right: 7px;
+                    top: 72px;
+                    color: $color-primary;
+                    font-size: 12px;
+                    padding: 2px 5px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+
+    }
+
+
+}

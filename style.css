@@ -1,0 +1,226 @@
+body {
+  background-color: #1A1C22;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 150%;
+}
+
+.contenedor-principal {
+  position: relative;
+  background-color: #8b5cf1;
+  padding: 15px;
+}
+
+.fa-solid {
+  color: #F7F7F7;
+  padding: 5px;
+}
+
+.navbar-links {
+  color: #F7F7F7;
+}
+
+@media (max-width: 768px) {
+  .header-right-mobile {
+    display: flex;
+    align-items: center;
+  }
+  .header-right-mobile .carrito-mobile {
+    border: none;
+    color: #F7F7F7;
+    font-size: 25px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .header-right-mobile .carrito-mobile .contador-mobile {
+    position: absolute;
+    right: 7px;
+    top: 72px;
+    color: #8b5cf1;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+  .header-right-mobile .carrito-mobile .lupita-mobile {
+    font-size: 25px;
+  }
+  .contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A1C22;
+  }
+  .contenedor-principal .barrab-mobile.mostrar {
+    display: block;
+    background-color: #8b5cf1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 2%;
+  }
+  .contenedor-principal .barrab-mobile {
+    border: none;
+    display: none;
+  }
+  .navbar-container.mostrar {
+    left: 0;
+  }
+  .navbar-container {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    transition: right 0.5s ease-in-out;
+    background-color: #1A1C22;
+    width: 85%;
+    height: 100vh;
+  }
+  .navbar-container .navbar-drop {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-container .navbar-drop .navbar-cerrar {
+    position: relative;
+    left: 90%;
+  }
+  .navbar-container .navbar-drop .navbar-items {
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #3D3A50;
+  }
+  .navbar-container .navbar-drop .flechita-drop {
+    position: relative;
+    left: 60%;
+  }
+  .navbar-container .navbar-drop .navbar-dropdown.mostrar {
+    display: block;
+  }
+  .navbar-container .navbar-drop .navbar-dropdown {
+    display: none;
+  }
+  .navbar-container .navbar-drop .item-dropdown {
+    padding: 20px;
+  }
+  .navbar-container .login-div-mobile {
+    position: relative;
+    display: flex;
+    top: 60%;
+    padding: 20px;
+    border-top: 1px solid #3D3A50;
+    border-bottom: 1px solid #3D3A50;
+  }
+  .navbar-container .login-div-mobile .separador-mobile {
+    color: #F7F7F7;
+  }
+  .navbar-container .login-div-mobile .login-mobile {
+    color: #F7F7F7;
+    text-decoration: none;
+    font-size: small;
+    padding: 5px;
+  }
+  .nav-up {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .navbar-boton {
+    display: none;
+  }
+  .navbar-dropdown {
+    display: none;
+  }
+  .fa-caret-down {
+    display: none;
+  }
+  .ocultar-boton {
+    display: none;
+  }
+  .navbar-drop {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .barrab-mobile {
+    display: none;
+  }
+  .lupita-mobile {
+    display: none;
+  }
+  .login-mobile {
+    display: none;
+  }
+  .separador-mobile {
+    display: none;
+  }
+  .carrito-mobile {
+    display: none;
+  }
+  .contador-mobile {
+    display: none;
+  }
+  .logo-mobile {
+    display: none;
+  }
+  .header-right-mobile {
+    display: none;
+  }
+  .nav-up {
+    background-color: #1A1C22;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  .nav-up .barra-busqueda {
+    border-bottom: 1px solid white;
+  }
+  .nav-up .barra-busqueda .barrab-desktop {
+    background-color: #1A1C22;
+    border: none;
+  }
+  .nav-up .header-right {
+    display: flex;
+    align-items: center;
+  }
+  .nav-up .header-right .login {
+    color: #F7F7F7;
+    text-decoration: none;
+    font-size: small;
+  }
+  .nav-up .header-right .separador {
+    color: #F7F7F7;
+  }
+  .nav-up .header-right .carrito-desktop {
+    border: none;
+    color: #F7F7F7;
+    font-size: 35px;
+    background-color: #1A1C22;
+    cursor: pointer;
+  }
+  .nav-up .header-right .carrito-desktop .contador-desktop {
+    position: absolute;
+    right: 7px;
+    top: 72px;
+    color: #8b5cf1;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
